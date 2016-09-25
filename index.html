@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width">
+ 	<link rel="stylesheet" type="text/css" href="main.css">
+ 	<link rel="stylesheet" type="text/css" href="cal.css">
+	<title>Calender</title>
+</head>
+<body>
+<div id="date">
+Enter month: 
+</br>
+<input id="inp_month" type="text" value="09">
+</br>
+</br>
+Enter year: 
+</br>
+<input id="inp_year" x	type="text" value="2016">
+</br>
+</br>
+<button id="submit">Submit</button>
+</br>
+</div>
+</br>
+<div id="cal">	
+	
+</div>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript">
+    function onBodyLoad() {
+    	calender.init({ targetId : "cal" , buttonId : "submit" , monthId : "inp_month" , yearId : "inp_year"});
+    };
+    window.addEventListener('load', onBodyLoad);
+</script>
+</body>
+</html>
