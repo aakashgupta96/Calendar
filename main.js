@@ -43,7 +43,9 @@ var calender = (function(){
     // CREATING HEADER
     var temp_month = new Date().getMonth();
     temp_month++;
+    month.value = temp_month;
     var temp_year = 1900 + new Date().getYear();
+    year.value = temp_year; 
     var curr_block = document.createElement("div");
     curr_block.className += "head";
     target.appendChild(curr_block);
