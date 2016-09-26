@@ -48,7 +48,7 @@ var calender = (function(){
     curr_block.className += "head";
     target.appendChild(curr_block);
     var prev = document.createElement("button");
-    prev.innerHTML = "Prev";
+    prev.innerHTML = "<i class='fa fa-caret-square-o-left head_but' aria-hidden='true'></i>";
     prev.className += "head_button";
     prev.addEventListener('click',call_prev);
     curr_block.appendChild(prev);
@@ -57,7 +57,7 @@ var calender = (function(){
     middle.innerHTML = Months[temp_month] + ", " + temp_year;
     curr_block.appendChild(middle);
     var next = document.createElement("button") ;
-    next.innerHTML = "Next";
+    next.innerHTML = "<i class='fa fa-caret-square-o-right head_but' aria-hidden='true'></i>";
     next.className += "head_button";
     next.addEventListener('click',call_next);
     curr_block.appendChild(next);
@@ -70,7 +70,7 @@ var calender = (function(){
       var curr_el = document.createElement("div");
       curr_el.className += "days";
       var content = document.createElement("p");
-      content.className += "content";
+      content.className += "content for-daylist";
       content.innerHTML = Days[i];
       curr_el.appendChild(content);
       curr_block.appendChild(curr_el);
